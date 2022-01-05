@@ -12,6 +12,7 @@ To predict this supervised binary classification problem. I was provided with a 
 ![Algorithmic_trading](images/Decision_tree_plot.png)
 
 in the machine learning process I went through diferent stages as  fitting the model to the data, making predictions, and then evaluating the quality of those predictions using methods like LogisticRegretion to create a logistic regretion model and RandomOverSampler to resample the data. 
+
 ![Algorithmic_trading](images/svm_plot.png)
 
 ---
