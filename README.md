@@ -7,7 +7,7 @@ This is a Jupyter notebook whose purpose is identify the Creditworthiness of bor
 To predict this supervised binary classification problem. I was provided with a lending_data.csv file which was read by python and converted into a dataframe, with the creation of labels and features datasets. The labels variable (y) contains  "loan_status" column. A value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting., The features variable (X) contains the remaining columns of the dataframe. Then I check the balance of the variable (y) with the help of the value_counts function to check how balanced or unbalanced the variable was then I split the data in training and testing datasets with train_test_split. 
 
 
-![Algorithmic_trading](images/svm_plot.png)
+
 
 ![Algorithmic_trading](images/Decision_tree_plot.png)
 
@@ -22,7 +22,6 @@ This setup assumes you already have conda installed.
 
 This project leverages python 3.7 with the following packages:
 
-![Imbalannced Classes Classifiers prompts](images/import_modules.png)
 
 
 ---
