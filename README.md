@@ -4,20 +4,23 @@
 
 This project aims at deploying a trading bot capable of trading based on an algorithm which will execute buy and sell orders in accordance with a trading strategy
 
-the performance of the baseline trading algorithm in this 1st fase is giving us as conclution that the Strategy performs almost the same as the actual returns until mid 2018. There is when the Strategy start to return better results till now.
+I was provided with a dataset of emerging_markets_ohlcv.csv file which was read by python and converted into a dataframe filtered into two columns "Close and Actual Returns" calculated thanks to the pct function and dropna to drop the nan values, after that we generate the trading signals with short and long windows SMA values. Then with the creation of the signals 1, -1 been 1 the buy order and -1 the sell order. We calculate the Strategy Returns by multipliyng the actual returns by the signal values
+
+![Algorithmic_trading](images/Strategy_returns.png)
+
+Then we split the data in training and testing datsets and slicing the time period for the training datasets to 3 months the we used the SVC classifier to fit train and make predictions based on the testing data. after that we review the classification report associated with the SVC model.
+
+# Conclusion 
+the performance of the baseline trading algorithm in this 1st fase is giving us a result that the Strategy performs almost the same as the actual returns until the 3Q of 2018. There is when the Strategy start to return better results till now.
 
 ![Algorithmic_trading](images/svm_plot.png)
 
-To predict this supervised binary classification problem. I was provided with a lending_data.csv file which was read by python and converted into a dataframe, with the creation of labels and features datasets. The labels variable (y) contains  "loan_status" column. A value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting., The features variable (X) contains the remaining columns of the dataframe. Then I check the balance of the variable (y) with the help of the value_counts function to check how balanced or unbalanced the variable was then I split the data in training and testing datasets with train_test_split. 
+# Tune the Baseline Trading Algorithm
 
 
 
 
-![Algorithmic_trading](images/Decision_tree_plot.png)
 
-in the machine learning process I went through diferent stages as  fitting the model to the data, making predictions, and then evaluating the quality of those predictions using methods like LogisticRegretion to create a logistic regretion model and RandomOverSampler to resample the data. 
-
-![Algorithmic_trading](images/svm_plot.png)
 
 ---
 
